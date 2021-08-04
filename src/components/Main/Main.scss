@@ -2,7 +2,7 @@
 	background-color: #F6F7FC;
 	height: 100%;
 	width: 100%;
-	transition: .1s all ease-in;
+	// transition: .1s all ease-in;
 	width: 100%;
 
 	&.full {
@@ -20,6 +20,8 @@
 	&-container {
 		margin: 40px 30px;
 		height: 100%;
+		padding-left: 76px;
+		transition: .2s all ease;
 	}
 }
 
