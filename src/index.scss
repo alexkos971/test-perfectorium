@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #242446;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  outline: none;
+  flex-shrink: 0;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #242446;
+  text-decoration: none;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F7FC;
+
+  .subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    color: #989EB8;
+  }
+}

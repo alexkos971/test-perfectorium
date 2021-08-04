@@ -1,0 +1,19 @@
+.app-main-whiteblock {
+	min-width: 415px;
+	// max-width: 489px;
+	height: 335px;
+	overflow: hidden;
+	margin-right: 36px;
+
+	background-color: #fff;
+	-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+	.app-main-whiteblock {
+		margin-bottom: 38px;
+	}
+}

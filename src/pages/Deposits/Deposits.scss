@@ -1,0 +1,140 @@
+.app-deposits {
+
+	&-container {
+		// width: calc(100% - 235px);
+		display: flex;
+		// justify-content: space-between;
+		&-first {
+			margin-right: 36px;
+		}
+	}
+	&-triggers {
+		width: 100%;
+    	display: flex;
+    	font-size: 14px;
+    	justify-content: space-between;
+    	text-transform: uppercase;
+    	height: 38px;
+    	cursor: pointer;
+
+    	&-item {
+    		width: 50%;
+    		text-align: center;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+
+    		&.r {
+    			background-color: #E9EDFE;
+    			color: #989EB8;
+    			border-bottom-right-radius: 5px;
+    		}
+    		&.l {
+    			background-color: #E9EDFE;
+    			color: #989EB8;
+    			border-bottom-left-radius: 5px;
+    		}
+    	}
+	}
+
+	&-check {
+		display: block;
+		height: calc(100% - 38px);
+    	margin: 30px 20px;
+    	position: relative;
+		
+		&-fields {
+			display: flex;
+    		justify-content: space-between;
+    		margin-bottom: 30px;
+
+    		&-input {
+    			display: block;
+    			width: 50%;
+
+    			span {
+    				margin-right: 50%;
+    				font-size: 14px;
+    			}
+
+    			input {
+    				width: 90%;
+    				background: #FFFFFF;
+    				border: 1px solid #E9EDFE;
+    				box-sizing: border-box;
+    				border-radius: 5px;
+    				padding: 10px 12px;
+    				margin-top: 8px;
+    				font-size: 16px;
+    			}
+    		}
+		}
+
+		&-radio {
+			&-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 18px;
+
+				span {
+					font-size: 14px;
+				}
+
+				input {
+					width: 16px;
+					height: 16px;
+					margin-right: 8px;
+					cursor: pointer;
+				}
+			}
+		}
+
+		&-btn {
+			position: relative;
+    		margin: 0 auto;
+    		display: block;
+    		margin-top: 30px;
+		}
+	}
+
+	&-header {
+		height: 38px;
+    	background: #0364FF;
+    	color: #fff;
+    	font-weight: 700;
+    	font-size: 16px;
+    	display: grid;
+    	grid-template-columns: 130px 3fr 1fr;
+    	align-items: center;
+    	padding: 0px 13px;
+	}
+
+	&-list {
+		padding: 0px 14px;
+    	height: calc(100% - 76px);
+    	margin: 0;
+    	overflow-y: hidden;
+	
+		&-item {
+			color: #242446;
+			border-bottom: 1.4px solid rgba(196,196,196, .5);
+			display: grid;
+    		grid-template-columns: 130px 3fr 1fr;
+			padding: 11px 0px;
+		}
+	}
+
+	&-pagination {
+		margin-top: 6px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.app-deposits-container {
+		display: block !important;
+	}
+
+	.app-deposits-check {
+		margin-bottom: 38px;
+	}
+}

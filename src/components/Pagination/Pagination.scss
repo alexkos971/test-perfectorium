@@ -1,0 +1,33 @@
+.app-main-pagination {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	span {
+		margin-right: 16px;
+		font-size: 14px;
+		display: flex;
+		color: #989EB8;
+		cursor: pointer;
+		align-items: center;
+		-webkit-touch-callout: none; /* iOS Safari */
+  		-webkit-user-select: none;   /* Chrome/Safari/Opera */
+  		-khtml-user-select: none;    /* Konqueror */
+  		-moz-user-select: none;      /* Firefox */
+  		-ms-user-select: none;       /* Internet Explorer/Edge */
+  		user-select: none; 
+	    	
+    	svg {
+    		width: 7px;
+    		margin-right: 18px;
+
+    		&:second-child {
+    			transform: rotate(180deg);
+    		}
+    	}
+	}
+
+	&-second {
+		transform: rotate(180deg);
+	}
+}

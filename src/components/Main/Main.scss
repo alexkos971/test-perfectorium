@@ -1,0 +1,25 @@
+.app-main {
+	background-color: #F6F7FC;
+	height: 100%;
+	width: calc(100% - 76px);
+	transition: .1s all ease-in;
+
+	&.full {
+		width: calc(100% - 235px);
+	}
+
+	&-header {
+		position: relative;
+		width: 100%;
+	}
+
+	&-container {
+		margin: 40px 30px;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.app-main {
+		width: calc(100% - 76px) !important;
+	}
+}

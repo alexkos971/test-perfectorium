@@ -1,0 +1,138 @@
+.app-sidebar {
+	height: 100%;
+	width: 76px;
+	background-color: #fff !important;
+	box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+	-moz-o-box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
+	transition: .1s all ease-in;
+
+	&.full {
+		width: 235px;
+
+
+		.app-sidebar {
+			&-head-arrow {
+				transform: translateY(-50%);
+
+			}
+			&-list-item {
+				justify-content: flex-start;
+				padding-left: 33px;
+
+				&-icon svg{
+					flex-shrink: 0;
+				}
+
+				&-text {
+					font-weight: 700;
+					font-size: 16px;
+					display: block;
+					opacity: 1;
+					margin-left: 11px;
+					animation: textOpacity .3s all;
+				}
+			}
+		}
+	}
+
+	&-head {
+		width: 100%;
+		height: 60px;
+		position: relative;
+		background: #0364FF;
+
+		&-arrow {
+			cursor: pointer;
+			padding: 3px;
+			position: absolute;
+			// right: 28px;
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%)  rotate(180deg);
+			transition: .2s all ease-in;
+			width: 60px;
+			height: 60px;
+			
+			svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				flex-shrink: 0;
+			}
+		}
+	}
+
+	&-list {
+		position: relative;
+    	margin-top: 57px;
+    	white-space: nowrap;
+    	display: block;
+    	padding: 0;
+
+
+		&-item {
+			display: flex;
+    		align-items: center;
+    		margin: 0 auto;
+    		justify-content: center;
+    		height: 48px;
+    		position: relative;
+    		margin-bottom: 30px;
+
+    		&.active {
+    			background-color: #E9EDFE;
+    			
+    			&::after {
+    				content: '';
+    				background: #0364FF;
+    				width: 2px;
+    				height: 100%;
+    				position: absolute;
+    				right: 0;
+    			}
+
+    		}
+
+    		&-icon {
+    			flex-shrink: 0;
+    		}
+
+			&-text {
+				display: none;
+
+			}
+		}
+	}
+}
+
+// @keyframes textOpacity {
+// 	fom {
+// 		opacity: 0;
+// 	}
+// 	to {
+// 		opacity: 1;
+// 	}
+// }
+
+@media screen and (max-width: 760px) {
+	.app-sidebar {
+		width: 76px !important;
+
+		&-head-arrow {
+			transform: translateY(-50%);
+			display: none !important;
+		}
+		&-list-item {
+			justify-content: flex-start;
+			padding-left: 23px !important;
+
+
+			&-text {
+				display: none !important;
+			}
+		}
+	}
+}
+

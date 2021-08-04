@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Redirect } from "react-router-dom";
+import './index.scss';
 
-function App() {
+import Sidebar from "./components/Sidebar";
+import Main from "./components/Main";
+
+
+const App = () => {
+  const [full, setFull] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="app">
+      <Redirect to="/deposits"/>
+      
+        <Sidebar full={full} setFull={setFull}/>
+
+        <Main full={full}/>
+      </div>
   );
 }
 
