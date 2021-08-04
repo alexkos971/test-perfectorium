@@ -6,9 +6,12 @@
 	-webkit-box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
 	-moz-o-box-shadow: 4px 0px 20px rgba(0, 0, 0, 0.1);
 	transition: .1s all ease-in;
+	position: fixed;
+	z-index: 3;
 
 	&.full {
 		width: 235px;
+		height: 100%;
 
 
 		.app-sidebar {
@@ -117,23 +120,6 @@
 // }
 
 @media screen and (max-width: 760px) {
-	// .app-sidebar {
-	// 	width: 76px !important;
-
-	// 	&-head-arrow {
-	// 		transform: translateY(-50%);
-	// 		display: none !important;
-	// 	}
-	// 	&-list-item {
-	// 		justify-content: flex-start;
-	// 		padding-left: 23px !important;
-
-
-	// 		&-text {
-	// 			display: none !important;
-	// 		}
-	// 	}
-	// }
 	.app-sidebar {
 		position: fixed;
     	bottom: 0%;

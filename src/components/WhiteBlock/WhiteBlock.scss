@@ -1,5 +1,5 @@
 .app-main-whiteblock {
-	min-width: 415px;
+	min-width: 39%;
 	// max-width: 489px;
 	height: 335px;
 	overflow: hidden;
@@ -12,7 +12,7 @@
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1250px) {
 	.app-main-whiteblock {
 		margin-bottom: 38px;
 	}

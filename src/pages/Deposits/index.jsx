@@ -1,4 +1,4 @@
-import React,  { useState, useEffect } from "react";
+import React,  { useState } from "react";
 import WhiteBlock from "../../components/WhiteBlock";
 import Button from "../../components/Button";
 
@@ -128,7 +128,8 @@ const Deposits = () => {
 			alert('Выберите поле account');
 			return;
 		} 
-		alert('Успешно')
+		alert('Успешно');
+		console.log(form)
 	}
 
 	const paginate = vector => {
@@ -142,10 +143,6 @@ const Deposits = () => {
 			setCurrentList(Math.ceil(data.length / itemPer))
 		}
 	}
-
-	useEffect(() => {
-		console.log(form)
-	}, [form])
 
 	return (
 		<div className="app-deposits">
