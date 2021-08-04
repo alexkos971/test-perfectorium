@@ -17,3 +17,9 @@
 		margin-bottom: 38px;
 	}
 }
+
+@media screen and (max-width: 760px) {
+	.app-main-whiteblock {
+		min-width: 100%;
+	}
+}

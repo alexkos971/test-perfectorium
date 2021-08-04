@@ -49,3 +49,9 @@ a {
     color: #989EB8;
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .app {
+    overflow-y: scroll;
+  }
+}

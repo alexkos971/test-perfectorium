@@ -14,14 +14,17 @@ const Header = () => {
 			</div>
 
 			<ul className="app-main-header-menu">
-				<li>
-					<Link to="/profile"><span>Profile</span></Link>
-					
-				</li>
+				<Link to="/profile">
+					<li>
+						<span>Profile</span>
+					</li>
+				</Link>
 
-				<li>
-					<Link to="/leave"><span>Sign out</span></Link>
-				</li>
+				<Link to="/leave">
+					<li>
+						<span>Sign out</span>
+					</li>
+				</Link>
 			</ul>
 		</div>
 	)
